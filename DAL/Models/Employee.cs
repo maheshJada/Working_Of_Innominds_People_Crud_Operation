@@ -39,6 +39,8 @@ namespace Working_Of_Innominds_People_Crud_Operation.Models
         [StringLength(40, ErrorMessage = "EmpCategory can't be longer than 40 characters")]
         public string EmpCategory { get; set; }
 
+        //Checking changes
+
         #endregion
     }
 }
