@@ -1,0 +1,55 @@
+﻿@model Working_Of_Innominds_People_Crud_Operation.Models.Employee
+
+<div>
+    <div class="border p-3">
+        <div class="form-group row">
+            <h2 class="text-info pl-3">Employee Details</h2>
+        </div>
+        <dl class="row border p-3">
+            <dt class="col-sm-2 form-group row">
+
+                @Html.DisplayNameFor(model => model.EmpName)
+            </dt>
+            
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.EmpName)
+            </dd>
+
+            <dt class="col-sm-2 form-group row">
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </dt>
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+            <dt class="col-sm-2 form-group row" >
+                @Html.DisplayNameFor(model => model.EmailID)
+            </dt>
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.EmailID)
+            </dd>
+            <dt class="col-sm-2 form-group row">
+                @Html.DisplayNameFor(model => model.EmpLocation)
+            </dt>
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.EmpLocation)
+            </dd>
+            <dt class="col-sm-2 form-group row">
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+            <dt class="col-sm-2 form-group row">
+                @Html.DisplayNameFor(model => model.EmpCategory)
+            </dt>
+            <dd class="col-sm-10 form-group row">
+                @Html.DisplayFor(model => model.EmpCategory)
+            </dd>
+          
+        </dl>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit"  class="btn btn-info w-auto"asp-route-id="@Model.EmpId">Edit</a> |
+    <a asp-action="Index" class="btn btn-success w-auto">Back</a>
+</div>
